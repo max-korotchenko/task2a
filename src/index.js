@@ -4,7 +4,7 @@ import cors from 'cors';
 const app = express();
 app.use(cors());
 
-app.get('/addition', function(req, res) {
+app.get('/', function(req, res) {
 	const a = +req.query.a || 0;
 	const b = +req.query.b || 0;
 
